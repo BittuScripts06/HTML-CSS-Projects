@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/homework.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter login Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            border: 2px solid rgb(12, 126, 126);
+            border-radius: 5px;
+            height: 300px;
+            width: 240px;
+            padding: 120px 35px 20px 34px;
+            margin: 50px auto;
+            box-shadow: 0px 0px 20px 2px;
+            background-color: rgb(29, 155, 240);
+        }
+
+        body {
+            background-image: url("twitter.jpg");
+            background-size: cover;
+        }
+
+        #bird {
+            position: relative;
+            left: 32px;
+            bottom: 250px;
+        }
+
+        input[type="submit"] {
+            width: 168px;
+            height: 20px;
+            align-items: center;
+            border: 1px solid rgb(36, 63, 236);
+            border-radius: 2px;
+            background-color: rgb(15, 15, 164);
+            color: antiquewhite;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(8, 8, 98);
+        }
+
+        input[type="submit"]:active {
+            background-color: rgb(254, 254, 255);
+        }
+
+        .radius:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .radius {
+            width: 165px;
+            height: 20px;
+            align-items: center;
+        }
+
+        p {
+            font-size: x-small;
+            color: white;
+            position: relative;
+            left: 62px;
+            top: 4px;
+        }
+
+        #password {
+            font-size: x-small;
+            color: white;
+            position: relative;
+            left: 100px;
+            top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="http://127.0.0.1:5500/backend.php">
+            <label for="main1">User Name</label>
+            <div class="radius">
+                <input type="text" name="myusername" id="main1">
+            </div>
+            <!-- <br> -->
+            <p id="password">forget password?</p>
+            <label for="main2">Password</label>
+            <br>
+            <div class="radius">
+                <input type="text" name="mypassword" id="main2">
+            </div>
+            <br>
+            <div class="box">
+                <input type="submit" value="Login">
+            </div>
+            <div>
+                <a href="https://www.youtube.com/watch?v=nGhKIC_7Mkk">
+                    <p>Dont have an account yet?</p>
+                </a>
+
+            </div>
+            <img src="./Twitter login Page_files/jaggi.png" height="100px" width="100px" id="bird">
+        </form>
+    </div>
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+
+</body>
+
+</html>

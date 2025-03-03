@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-container {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0px;
+    right: 0;
+    height: 64px;
+    background: rgba(89, 131, 83, 0.09);
+    backdrop-filter: blur(80px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.nav-link {
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+
+}
+
+.nav-link-item {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #767676;
+}
+
+.nav-link-item:hover {
+    color: #333;
+
+}
+
+.download-btn {
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    background: #04ddb2;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* hero section start here */
+.section {
+    padding-top: 5rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    padding: 0rem 5rem;
+}
+
+.upper-hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.upper-title {
+    font-size: 4rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.descriptions {
+    font-size: 1.5rem;
+    width: 60%;
+    color: #333;
+    font-weight: 400;
+}
+
+.middle-hero-container {
+    height: 35rem;
+    width: 60rem;
+    background: #E8EDF0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.middle-hero-container:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+video {
+    height: 85%;
+    width: 75%;
+    border-radius: 40px;
+}
+
+.lower-hero-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+
+}
+
+.lower-title {
+    font-size: 4rem;
+    color: #333;
+    font-weight: 600;
+
+}
+
+/* footer start here */
+hr{
+    width: 70%;
+    size: 3;
+    color: #333;
+    margin-bottom: 5rem;
+    margin-left: 16%;
+}

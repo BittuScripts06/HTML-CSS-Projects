@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+
+    font-family: "Roboto", sans-serif;
+}
+
+.hero-section {
+    background-image: url("Developer-img.jpeg");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-container {
+    max-width: 900px;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 16px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    margin-left: 320px;
+}
+
+.lg-text {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.black-box {
+    background: black;
+    padding: 20px;
+    color: #fff;
+}
+
+.black-box h2 {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.black-box h2 span {
+    font-size: 96px;
+    font-weight: 400;
+
+}
+
+.mid-work {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    max-width: 350px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    margin-bottom: 10px;
+    margin-top: 100px;
+    transition: 0.2s ease-in;
+
+}
+
+.card-content {
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+p {
+    font-size: 15px;
+}
+
+.card-container:hover {
+    transform: scale(1.04);
+    transition: 0.2s ease-in;
+}
+
+.information-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact {
+    background: #515603;
+    min-height: 300px;
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+
+.about {
+    background: #722300;
+    min-height: 300px;
+    padding: 20px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+}
+
+.text-about {
+    margin: 50px;
+}
+
+.footer-section {
+    height: 90px;
+    
+    background: black;
+    color: #fff;
+    text-align: center;
+
+}
+.last-text{
+    padding-top: 30px;
+}
+    
